@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamod_Dinushka_Portfolio</title>
+    <link rel="stylesheet" href ="style.css"> 
+    <script src="https://kit.fontawesome.com/7caa16c4f9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenue">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="#portfolio">My Works</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenue()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenue()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Tech Enthusiast</p>
+                <h1>Hi, I'm <span id="typedText">Chamod Dinushka</span></h1>
+                <p>IT Project Management | Cybersecurity | Data Analysis</p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "about">
+        <div class ="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" class="user-image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m S.A. Chamod Dinushka Bandara, a computer science student at Bedfordshire University with a passion for technology and problem-solving. 
+                    My interests include project management, cybersecurity, and data analysis, 
+                    where I enjoy working on strategies to improve systems and processes. I have experience in web development and managing technology projects, 
+                    and I’m always eager to take on new challenges and continue learning in the ever-evolving IT landscape.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android Apps</li>
+                            <li><span>Problem Solving</span><br>Handling Complex Challenges</li>
+                            <li><span>Teamwork</span><br>Collaborating with Others Effectively</li>
+                            <li><span>Leadership</span><br>Guiding Teams to Achieve Goals</li>
+                            <li><span>Communication</span><br>Clear and Effective Exchange of Ideas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Academic project management</li>
+                            <li><span>2021 - 2023</span><br>Freelance Academic writing</li>
+                            <li><span>2024 - Current</span><br>Active member of Rotract Club of Colombo Heritage</li>
+                            <li><span>2022 - 2023</span><br>Teaching English and IT</li>
+                            <li><span>2019 - 2020</span><br>Active member of Interact Club of Wayamba Royal College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Undergraduate at University of Bedfordshire (SLIIT City Uni) </li>
+                            <li><span>2024</span><br>Certificate cource in Web app Development (UOM)</li>
+                            <li><span>2023 - 2024</span><br>English Diploma (IMBS Campus)</li>
+                            <li><span>2023</span><br>Responsive Web Design (freeCodeCamp)</li>
+                            <li><span>2023</span><br>Legacy JavaScript Algorithems and Data Structures (freeCodeCamp)</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating responsive and visually appealing websites that provide a seamless user experience. My web design skills focus on modern, clean designs that effectively communicate your brand and engage users across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and user-friendly interfaces that prioritize the user experience. By focusing on both usability and aesthetics, I ensure that applications are easy to navigate and visually engaging, enhancing overall user satisfaction.</p>
+                    <a href="#">Learn more</a>
+                </div>
+<!---              
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I create functional and innovative mobile app designs that offer a smooth user experience across platforms. From wireframes to high-fidelity prototypes, I ensure the design aligns with user needs and business goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            -->                
+                <div>
+                    <i class="fa-regular fa-file"></i>
+                    <h2>Technical Documentation</h2>
+                    <p>I offer detailed and clear technical documentation for software, systems, and processes. From user manuals to API documentation, I ensure that complex technical information is accessible, well-organized, and easy to understand for both technical and non-technical audiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Vehicle Repair Inventory Management">
+                    <div class="layer">
+                        <h3>Vehicle Repair Inventory System</h3>
+                        <p>A Java Swing desktop application for managing vehicle repair inventory, customer orders, and job assignments.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Salon Olivia Website">
+                    <div class="layer">
+                        <h3>Salon Olivia Website</h3>
+                        <p>A dynamic, responsive website showcasing services, products, and customer reviews for Salon Olivia.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Note CRUD Application">
+                    <div class="layer">
+                        <h3>Note CRUD Application</h3>
+                        <p>An Android Studio app for creating, editing, and managing notes with full CRUD functionality.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png" alt="Note CRUD Application">
+                    <div class="layer">
+                        <h3>Research Report on Gaming and Cognitive Skills</h3>
+                        <p>A detailed analysis investigating how gaming impacts cognitive skills, including learning, memory, and problem-solving.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/chamoddinushka" class="btn" target="_blank" rel="noopener noreferrer">See more</a>
+    </div>
+
+    <div id ="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chamoddinushka58@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+94 776261549</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/chamod.dinushka.3" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://www.instagram.com/chamod_dinushka/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chamod-dinushka" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright GreatStack. Made by <i class="fa-solid fa-heart"></i> Dinux.Dev</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Typing Effect -->
+    <script>
+ const names = ["Chamod Dinushka","A Creative Web Developer"];
+let currentIndex = 0;
+let typingSpeed = 150;
+let deletingSpeed = 100;
+let pauseAfterTyping = 1500;
+let pauseAfterDeleting = 500;
+
+const typedTextElement = document.getElementById("typedText");
+
+function typeText(text, index = 0) {
+    if (index === 0) {
+        // Clear text content before starting to type to prevent duplication
+        typedTextElement.textContent = '';
+    }
+    
+    if (index < text.length) {
+        typedTextElement.textContent += text.charAt(index);
+        setTimeout(() => typeText(text, index + 1), typingSpeed);
+    } else {
+        setTimeout(() => deleteText(text), pauseAfterTyping);
+    }
+}
+
+function deleteText(text) {
+    if (text.length > 0) {
+        typedTextElement.textContent = text.substring(0, text.length - 1);
+        setTimeout(() => deleteText(text.substring(0, text.length - 1)), deletingSpeed);
+    } else {
+        currentIndex = (currentIndex + 1) % names.length;
+        setTimeout(() => typeText(names[currentIndex]), pauseAfterDeleting);
+    }
+}
+
+typeText(names[currentIndex]);
+    </script>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove ("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove ("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+
+<script>
+    var sidemenue=document.getElementById("sidemenue");
+    function openmenue(){
+        sidemenue.style.right='0';
+    }
+    function closemenue(){
+        sidemenue.style.right='-200px';
+    }
+
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwWzwPHHic8x_u66fDFLnhASFDgHC80QmxwQg_Vt9wkbBgUgqdl__aZ6-c-FhibLE4QQw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
